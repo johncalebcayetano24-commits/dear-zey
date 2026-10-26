@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D49498;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C28285;
+}
+
+/* Ambient subtle background glow */
+.ambient-glow {
+  background: radial-gradient(circle at 50% 20%, rgba(232, 180, 184, 0.22) 0%, rgba(237, 228, 240, 0.18) 40%, rgba(250, 247, 242, 0) 75%);
+}
+
+.intimate-glow {
+  background: radial-gradient(circle at 50% 45%, rgba(232, 180, 184, 0.32) 0%, rgba(221, 208, 230, 0.22) 35%, rgba(250, 247, 242, 0.95) 75%);
+}
+
+/* Paper texture simulation using SVG noise */
+.paper-texture {
+  background-color: #FAF7F2;
+  background-image: radial-gradient(#9e5a63 0.4px, transparent 0.4px);
+  background-size: 24px 24px;
+  background-position: 0 0;
+  opacity: 0.98;
+}
+
+.card-paper {
+  background: linear-gradient(175deg, #FFFFFF 0%, #FDFBF8 100%);
+  border: 1px solid rgba(232, 180, 184, 0.3);
+}
+
+/* Wax seal styling */
+.wax-seal {
+  background: radial-gradient(circle at 35% 35%, #DC999E 0%, #9E5A63 70%, #5C2831 100%);
+  box-shadow: 0 4px 14px rgba(92, 40, 49, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+/* Focus styles for keyboard accessibility */
+button:focus-visible, a:focus-visible {
+  outline: 2px solid #C28285;
+  outline-offset: 2px;
+}
